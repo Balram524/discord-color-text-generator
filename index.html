@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>Rebane's Discord Colored Text Generator</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rebane's Discord Colored Text Generator">
+    <meta name="author" content="rebane2001">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Rebane's Discord <span style="color:#5865F2">Colored</span> Text Generator</h1>
+<div class="container">
+    <h3>About</h3>
+    <p>This is a simple app that creates colored Discord messages using the ANSI color codes available on the latest Discord desktop versions.</p>
+    <p>To use this, write your text, select parts of it and assign colors to them, then copy it using the button below, and send in a Discord message.</p>
+    <h3>Source Code</h3>
+    <p>This app runs entirely in your browser and the source code is freely available on <a href="https://gist.github.com/rebane2001/07f2d8e80df053c70a1576d27eabe97c">GitHub</a>. Shout out to kkrypt0nn for <a href="https://gist.github.com/kkrypt0nn/a02506f3712ff2d1c8ca7c9e0aed7c06">this guide</a>.</p>
+</div>
+
+<h2>Create your text</h2>
+<button data-ansi="0" class="button style-button">Reset All</button>
+<button data-ansi="1" class="button style-button ansi-1">Bold</button>
+<button data-ansi="4" class="button style-button ansi-4">Line</button>
+<br><br>
+
+<strong>FG</strong>
+<button data-ansi="30" class="button style-button ansi-30-bg"></button>
+<button data-ansi="31" class="button style-button ansi-31-bg"></button>
+<button data-ansi="32" class="button style-button ansi-32-bg"></button>
+<button data-ansi="33" class="button style-button ansi-33-bg"></button>
+<button data-ansi="34" class="button style-button ansi-34-bg"></button>
+<button data-ansi="35" class="button style-button ansi-35-bg"></button>
+<button data-ansi="36" class="button style-button ansi-36-bg"></button>
+<button data-ansi="37" class="button style-button ansi-37-bg"></button>
+<br><br>
+
+<strong>BG</strong>
+<button data-ansi="40" class="button style-button ansi-40"></button>
+<button data-ansi="41" class="button style-button ansi-41"></button>
+<button data-ansi="42" class="button style-button ansi-42"></button>
+<button data-ansi="43" class="button style-button ansi-43"></button>
+<button data-ansi="44" class="button style-button ansi-44"></button>
+<button data-ansi="45" class="button style-button ansi-45"></button>
+<button data-ansi="46" class="button style-button ansi-46"></button>
+<button data-ansi="47" class="button style-button ansi-47"></button>
+<br><br>
+
+<div class="flex">
+    <div id="textarea" contenteditable="true">Welcome to&nbsp;<span class="ansi-33">Rebane</span>'s <span class="ansi-45"><span class="ansi-37">Discord</span></span>&nbsp;<span class="ansi-31">C</span><span class="ansi-32">o</span><span class="ansi-33">l</span><span class="ansi-34">o</span><span class="ansi-35">r</span><span class="ansi-36">e</span><span class="ansi-37">d</span>&nbsp;Text Generator!</div>
+</div>
+
+<br>
+<button class="button copy">Copy text as Discord formatted</button>
+<br><br>
+
+<small>This is an unofficial tool, it is not made or endorsed by Discord.</small>
+<div class="tooltip">Tooltip</div>
+
+<script src="script.js"></script>
+</body>
+</html>
